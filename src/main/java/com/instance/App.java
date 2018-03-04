@@ -15,6 +15,9 @@ public class App {
         a.testQRcode();
     }
 
+    /**
+     * 二维码test
+     */
     private void testQRcode(){
         String content="http://weixin.qq.com/q/02T5OddzamcF110000007B";
         String logUri="F:\\logo.png";
