@@ -21,6 +21,6 @@ public class App {
         String outFileUri="C:\\Users\\WXY\\Desktop\\qrcode.png";
         int[]  size=new int[]{430,430};
         String format = "png";
-        new QRCodeFactory().creatQrImage(content, format, outFileUri, logUri,null);
+        new QRCodeFactory().creatQrImage(content, format, outFileUri, logUri,size);
     }
 }
