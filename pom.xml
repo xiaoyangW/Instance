@@ -17,7 +17,7 @@
 
   <dependencies>
 
-    <!--二维码生成解析-->
+    <!--zxing二维码生成解析-->
     <dependency>
       <groupId>com.google.zxing</groupId>
       <artifactId>core</artifactId>
