@@ -2,6 +2,7 @@
 开发中用到的工具类(持续更新中)
 
 `com.instance.QRCode目录下是使用google的zxing工具包实现的生成可带logo二维码的工具类`
+
 使用方法示例：
 ```
 //二维码内容
@@ -20,3 +21,9 @@ new QRCodeFactory().creatQrImage(content, format, outFileUri, logUri,size);
          
 
 `com.instance.WechatRedBasic 主要使用微信公众号现金红包的工具类，实现红包接口的密钥生成，支付CA证书权限等。`
+
+使用示例：
+```$xslt
+Map<String, String> map = RedBigUtil.sendRedBasic("发给用户的openid", "金额（分）", "恭喜发财", "注册福利！");
+//map为红包发送情况
+```
