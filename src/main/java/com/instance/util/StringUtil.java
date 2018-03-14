@@ -5,6 +5,9 @@ import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -60,5 +63,20 @@ public class StringUtil {
             e.printStackTrace();
         }
     }
-
+    /**
+     *  将map转换为XML
+     * @param map 转换map
+     * @return string
+     */
+    public static String createXML(Map<String, Object> map) {
+        String xml = "<xml>";
+        Set<String> set = map.keySet();
+        Iterator<String> i = set.iterator();
+        while (i.hasNext()) {
+            String str = i.next();
+            xml += "<" + str + ">" + "<![CDATA[" + map.get(str) + "]]>" + "</" + str + ">";
+        }
+        xml += "</xml>";
+        return xml;
+    }
 }
