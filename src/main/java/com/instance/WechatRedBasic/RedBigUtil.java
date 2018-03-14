@@ -152,7 +152,7 @@ public class RedBigUtil {
 		map.put("mch_id", MCH_ID);
 		map.put("nonce_str", getRedString(24));
 		map.put("mch_billno", getCampaignCode());
-		map.put("send_name", "创图房产经纪人");
+		map.put("send_name", "Hello");
 		map.put("re_openid", openid);
 		map.put("total_amount", total_amount);
 		map.put("total_num", 1);
